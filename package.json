@@ -1,0 +1,24 @@
+{
+  "name": "04-spaceman404",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "dead-server --port=4104 --host=localhost"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RokasSweets/04-spaceman404.git"
+  },
+  "keywords": [],
+  "author": "RokasSweets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RokasSweets/04-spaceman404/issues"
+  },
+  "homepage": "https://github.com/RokasSweets/04-spaceman404#readme",
+  "devDependencies": {
+    "dead-server": "^1.0.9"
+  }
+}
