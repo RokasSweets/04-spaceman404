@@ -32,13 +32,11 @@ p1 {color: white;}
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0.0.0.0.1);
-    opacity: 0.98;
-}
+    opacity: 0.98;}
 .btn:hover, .btn:focus, .btn:active{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
+    transform: scale(1.1);}
 
 .bordered {
     width: 300px;
@@ -46,5 +44,25 @@ p1 {color: white;}
     padding: 10px;
     border: 1px solid gray;
     border-radius: 18px;
-    opacity: 1;
+    opacity: 1;}
+
+div {
+    position: relative;
+    animation: mymove 3s;
 }
+#div1 {
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+#div2 {
+    animation-timing-function: ease;
+    animation: mymove1 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+        from {left: 0px;}
+        to {left: 250px;}}
+@keyframes mymove1 {
+        from {right: 0px;}
+        to {right: 250px;}}
