@@ -6,15 +6,22 @@
     font-family: 'Comfortaa', cursive;
 }
 
+.main-box {
+    margin-top: 250px;
+    margin-left: 52%;
+    display: flex;
+    height: 303px;
+    width: 467px;
+    background: rgba(25, 25, 25, 0.3);
+}
+
 h1 {
     font-size: 120px;
     color: white;}
 h2 {
     font-size: 60px;
     color: white;}
-h3 {
-    font-size: 20px;
-    color: grey;}
+
 p {
     color: white;
     font-size: 30px;
@@ -38,32 +45,47 @@ ul {
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0.0.0.0.1);
-    opacity: 0.98;}
-.btn:hover, .btn:focus, .btn:active{
+    opacity: 0.98;
+    transition: 0.5s;}
+.btn:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);}
+}
 
 .bordered {
-    width: 300px;
-    height: 100px;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 18px;
     opacity: 1;}
 
-div {
-    position: absolute;
-    animation: mymove 3s;
-}
-#div1 {
+.fact-box {
     animation-timing-function: ease;
+    animation: mymove 3s;
     animation-fill-mode: forwards;
+    height: 250px;
+    width: 665px;
+    background: rgba(25, 25, 25, 0.5);
+    float: left;
+    position: absolute;
 }
-#div2 {
+.main-page-box {
     animation-timing-function: ease;
     animation: mymove1 3s;
     animation-fill-mode: forwards;
+    height: 250px;
+    width: 665px;
+    background: rgba(25, 25, 25, 0.5);
+    float: right;
+    position: absolute;
+}
+
+.bottom-nav {
+    margin-top: 395px;
+    display: block;
+    margin-left: 10px;}
+
+.bottom-nav > a {
+    color: white;
+    text-decoration: none;
 }
 
 @keyframes mymove {
